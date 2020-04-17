@@ -1,0 +1,87 @@
+"""programa que permite llevar control de una empresa de lavados de autos """
+
+Motocicleta = 15.00
+Automovil = 30.00
+Camioneta = 50.00
+
+print("-**-**-**-**-**-**-**-**-**-**-**-**-**-")
+print("Bienvenidos al sistema control de ventas")
+print("\t :::Menu::: ")
+print("Seleccione tipo de vehiculo:")
+print("1. Motocicleta ")
+print("2. Automovil")
+print("3. Camioneta")
+print("4. salir")
+opcion = int(input("Digite opcion de menu: "))
+print("-**-**-**-**-**-**-**-**-**-**-**-**-**-")
+while opcion==1:
+    print("1. Estandar")
+    print("2. Miembro")
+    opcion = int(input("Digite tipo de cliente: "))
+    if opcion==1:
+        while opcion==1:
+            print("fin de semana si/no: ")
+            print("1. SI. ")
+            print("2. NO. ")
+            opcion = int(input("seleccione segun dia: "))
+            if opcion==1:
+                print(f"El total a cancelar es: {Motocicleta}")
+            else:
+                TotalMoto = Motocicleta*0.10
+                TotalPagar= Motocicleta-TotalMoto
+                print(f"El descuento es de : {TotalMoto}")
+                print(f"El Pago total menos descuento del 10% es de: {TotalPagar}")
+    else:
+        TotalMoto = Motocicleta * 0.10
+        TotalPagar = Motocicleta - TotalMoto
+        print(f"El descuento es de : {TotalMoto}")
+        print(f"El Pago total menos descuento del 10% es de: {TotalPagar}")
+while opcion == 2:
+    print("1. Estandar")
+    print("2. Miembro")
+    opcion = int(input("Digite tipo de cliente: "))
+    if opcion == 1:
+        while opcion == 1:
+            print("fin de semana si/no: ")
+            print("1. SI. ")
+            print("2. NO. ")
+            opcion = int(input("seleccione segun dia: "))
+            if opcion == 1:
+                print(f"El total a cancelar es: {Automovil}")
+            else:
+                TotalAuto = Automovil * 0.10
+                TotalPagar = Automovil - TotalAuto
+                print(f"El descuento es de : {TotalAuto}")
+                print(f"El Pago total menos descuento del 10% es de: {TotalPagar}")
+    elif opcion == 3:
+        TotalAuto = Automovil * 0.10
+        TotalPagar = Automovil - TotalAuto
+        print(f"El descuento es de : {TotalAuto}")
+        print(f"El Pago total menos descuento del 10% es de: {TotalPagar}")
+    elif opcion != 3:
+        print("Que tenga buen dia, lo esperamos pronto.")
+while opcion == 3:
+    print("1. Estandar")
+    print("2. Miembro")
+    print("3. salir")
+    opcion = int(input("Digite tipo de cliente: "))
+    if opcion == 1:
+        while opcion == 1:
+            print("fin de semana si/no: ")
+            print("1. SI. ")
+            print("2. NO. ")
+            opcion = int(input("seleccione segun dia: "))
+            if opcion == 1:
+                print(f"El total a cancelar es: {Camioneta}")
+            elif opcion == 2:
+                TotalCam = Camioneta * 0.10
+                TotalPagar = Camioneta - TotalCam
+                print(f"El descuento es de : {TotalCam}")
+                print(f"El Pago total menos descuento del 10% es de: {TotalPagar}")
+    elif opcion == 2:
+        TotalCam = Camioneta * 0.10
+        TotalPagar = Camioneta - TotalCam
+        print(f"El descuento es de : {TotalCam}")
+        print(f"El Pago total menos descuento del 10% es de: {TotalPagar}")
+    elif opcion != 3:
+        print("Que tenga buen dia, lo esperamos pronto.")
